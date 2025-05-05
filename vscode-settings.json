@@ -1,61 +1,74 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula Pro",
-  "workbench.editor.labelFormat": "short",
-  "workbench.startupEditor": "none",
-  "workbench.editor.enablePreview": true,
-  "explorer.compactFolders": false,
-
-  // Editor settings
-  "editor.wordWrap": "on",
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontWeight": 600,
-  "editor.fontSize": 12,
-  "editor.lineHeight": 20,
+  "workbench.tree.indent": 16,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [80, 120],
+  "workbench.startupEditor": "newUntitledFile",
   "editor.renderLineHighlight": "gutter",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeight": 500,
-  "editor.tabSize": 2,
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.fontLigatures": true,
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "editor.semanticHighlighting.enabled": "configuredByTheme",
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "editor.minimap.autohide": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.statusBar.visible": true,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "terminal.integrated.fontSize": 14,
+
+  // code formatter
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
+    "source.fixAll": "always"
   },
-
-  // VScode stuff
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0,
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-
-  // Extensions    
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.suggestSelection": "first",
+  "eslint.format.enable": true,
+  "terminal.integrated.env.osx": {},
+"console-ninja.featureSet": "Community",
+  "terminal.integrated.env.linux": {},
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "diffEditor.ignoreTrimWhitespace": false,
-  "material-icon-theme.folders.associations": {
-    "domain": "core",
-    "infra": "app",
-    "main": "public",
-    "presentation": "connection",
-    "cryptography": "secure",
-    "entities": "class",
-    "repositories": "mappings",
-    "protocols": "resource",
-    "useCases": "components",
-    "adapters": "connection",
-    "factories": "container",
-    "globals": "global",
-    "ui": "views"
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
   },
-  "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "tsconfig.json": "tune",
-    ".lintstagedrc.json": "tune"
+  "cSpell.userWords": [
+    "LTRB",
+    "ndjson",
+    "Pressable",
+    "sysparm",
+    "tsyringe",
+    "typeorm"
+  ],
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.commandCenter.enabled": false,
+  "workbench.colorTheme": "Dracula Pro (Van Helsing)"
 }
