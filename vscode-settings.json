@@ -13,7 +13,7 @@
   "editor.semanticHighlighting.enabled": "configuredByTheme",
   "breadcrumbs.enabled": false,
   "workbench.activityBar.location": "hidden",
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "workbench.statusBar.visible": true,
@@ -21,14 +21,50 @@
   "workbench.layoutControl.enabled": false,
   "terminal.integrated.fontSize": 14,
 
+  "material-icon-theme.folders.associations": {
+    "domain": "core",
+    "infra": "app",
+    "application": "app",
+    "main": "public",
+    "presentation": "connection",
+    "gateways": "plugin",
+    "cryptography": "secure",
+    "entities": "class",
+    "repositories": "mappings",
+    "protocols": "resource",
+    "@interfaces": "interface",
+    "UseCases": "components",
+    "subcomponents": "components",
+    "adapters": "connection",
+    "factories": "container",
+    "globals": "global",
+    "ui": "views",
+    "htmlTemplates": "template",
+    "http": "api",
+    "sls": "serverless",
+    "@contracts": "contract",
+    "tailwind": "theme",
+    "routing": "routes",
+    "_layout": "layout",
+    "@shared": "shared",
+    "features": "core",
+    "identity": "admin",
+    "iam": "admin",
+    "cdk": "aws",
+    "kernel": "core"
+  },
+
   // code formatter
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "always"
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always",
+    "source.addMissingImports.ts": "always",
+    "source.sortMembers": "always"
   },
   "eslint.format.enable": true,
   "terminal.integrated.env.osx": {},
-"console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -37,7 +73,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -53,12 +89,21 @@
     "editor.wordBasedSuggestions": "off"
   },
   "cSpell.userWords": [
+    "cnpj",
+    "foodiary",
+    "KSUID",
     "LTRB",
+    "minchars",
     "ndjson",
+    "paramtypes",
     "Pressable",
+    "qrcode",
     "sysparm",
     "tsyringe",
-    "typeorm"
+    "typeorm",
+    "unparse",
+    "usecase",
+    "usecases"
   ],
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -70,5 +115,13 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "chat.commandCenter.enabled": false,
-  "workbench.colorTheme": "Dracula Pro (Van Helsing)"
+  "workbench.colorTheme": "Dracula Pro (Buffy)",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "git.autofetch": true,
+  "workbench.editor.empty.hint": "hidden"
 }
